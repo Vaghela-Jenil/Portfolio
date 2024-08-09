@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="portfolio">
+        <header>
+            <nav>
+                <div class="navbar">
+                    <span id="logo"><i class="fa-brands fa-codepen"></i></span>
+                    <p id="logo-name">Portfolio</p>
+
+                    <div class="nav-ref">
+                        <div class="reference">
+                            <ul>
+                                <li onclick="slide(10), scrollToTop()"><a href="#home">Home</a></li>
+                                <li onclick="slide(120)"><a href="#about">About</a></li>
+                                <li onclick="slide(240)"><a href="#education">Education</a></li>
+                                <li onclick="slide(365)"><a href="#skill">Skills</a></li>
+                                <li onclick="slide(480), openform()" id="gotoform"><a>Contact</a></li>
+                            </ul>
+                            <div class="ref-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar" onclick="openSideBar()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="sidenav">
+                <i class="fa-solid fa-xmark" onclick="closeSideBar()"></i>
+                <div class="side-ref">
+                    <ul>
+                        <li onclick="scrollToTop()"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li id="gotoform" onclick="openform()"><a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container">
+            <div class="port1">
+                <div class="image-detail">
+                    <div class="image-png">
+                        <img id="user-img" src="portfolio-img.png" alt="profile-image">
+                    </div>
+                    <div class="pers-detail">
+                        <span id="hii">Hello, it's me</span>
+                        <span id="name">I'm Jenil Vaghela</span>
+                        <div class="wrapper">
+                            <div class="static">And I'm</div>
+                            <div class="dynamic-cont">
+                                <div class="dynamic">
+                                    <ul>
+                                        <li>Student</li>
+                                        <li>Intern</li>
+                                        <li>Ethelit</li>
+                                        <li>Introvert</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="welcome-text">
+                            <p id="text">Welcome to my portfolio! I'm Vaghela jenil, a passionate Web Developer student
+                                with
+                                over 1 year
+                                of experience in creating dynamic and responsive websites. I love transforming ideas
+                                into
+                                reality using code.
+                            </p>
+                        </div>
+
+                        <div class="icon-cont">
+                            <div class="icons">
+                               <a href="#"> <i class="fa-brands fa-facebook icon"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin icon"></i></a>
+                                <a href="#"><i class="fa-brands fa-github icon"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <button id="btn"><a href="#" target="_blank">Visit</a><i
+                                    class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about cont" id="about">
+            <div class="port2 port">
+                <div class="com-img cont-img">
+                    <img id="computer-image" class="cont-image" src="about_me.png" alt="computer.png">
+                </div>
+                <div class="about-detail cont-detail">
+                    <h2>About me</h2>
+                    <p>Hi, I'm Vaghela Jenil, a 3rd year student at Indus University,Ahmedabad, majoring in Computer
+                        Science. I'm passionate about Full Stack Developer and am eager to apply my knowledge and skills
+                        to real-world challenges. </p>
+                    <br>
+                    <p>Currently, I am pursuing a degree in Computer science, with a focus on Become Best Developer.
+                        Some of the key projects I've worked on include Sorting visulizer. I have also excelled in
+                        Langueges such as C, C++, jacascipt.</p>
+                    <br>
+                    <p>My academic journey has equipped me with skills in Problem-Solving. Outside of my studies, I am
+                        actively involved in Heckathon & Online Study of different language, where I have get so much
+                        Experiance. I also enjoy playing Sports like Vollyboll and Kabbadi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="education cont" id="education">
+            <div class="port3 port">
+                <div class="educ-img cont-img">
+                    <img id="educ-image" class="cont-image" src="education-img.png" alt="book.png">
+                </div>
+                <div class="educ-detail cont-detail">
+                    <h2>Education</h2>
+                    <span>2020 - 2022</span>
+                    <h3>High School Degree</h3>
+                    <p>Divine life International School, Ahmedabad</p>
+                    <p>Percentage: 58.4</p>
+                    <br>
+                    <span>2022 - current</span>
+                    <h3>Collage Degree</h3>
+                    <p>Btech Computer Scince and Enginnering, 3rd year</p>
+                    <p>current cgpa: 9.4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Skill cont" id="skill">
+            <div class="port4 port">
+                <div class="skill-img cont-img">
+                    <img id="skill-image" class="cont-image" src="skills_img.jpg" alt="skill.png" >
+                </div>
+                <div class="about-detail cont-detail">
+                    <h2>Skills</h2>
+                    <div class="skill-content">
+                        <h3>Personal Skills</h3>
+                        <div class="skill-sets">
+                            <ul>
+                                <li>Problem-Solving</li>
+                                <li>Critical-thinking</li>
+                                <li>Communication</li>
+                                <li>Oberservation</li>
+                                <li>Calm Personality</li>
+                            </ul>
+
+                            <h3>Programming Skills</h3>
+                            <div class="skill-sets">
+                                <ul>
+                                    <li>C</li>
+                                    <li>C++</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>React js</li>
+                                    <li>Node/Express js</li>
+                                    <li>Mongodb</li>
+                                    <li>My SQL</li>
+                                </ul>
+
+                                <h3>language Skills</h3>
+                                <div class="skill-sets">
+                                    <ul>
+                                        <li>Gujarati</li>
+                                        <li>Hindi</li>
+                                        <li>English</li>
+                                    </ul>
+                                </div>
+                                <h3>Projects</h3>
+                                <div class="skill-sets">
+                                    <ul>
+                                        <li>Food Website</li>
+                                        <li>Sportify Clone</li>
+                                        <li>Responsive Navbar</li>
+                                        <li>Portfolio</li>
+                                        <li>Landing Pages</li>
+                                        <li>Signup forms</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form action="creatForm" class="contact-form" id="contact-form">
+        <i id="form-close" onclick="closeform()" class="fa-solid fa-xmark"></i>
+        <u>
+            <h3>Fill the form for Contact</h3>
+        </u>
+        <label for="email">Email Address :</label>
+        <input type="email" formnovalidate="formnovalidate" id="email" name="email" placeholder="Enter email.."
+            required>
+        <label for="phoneNumber">Phone Number :</label>
+        <input type="number" id="fnumbar" name="fnumber" placeholder="Enter phone number.." required>
+        <label for="fname">Name :</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter name.." required>
+        <label for="subject">Subject :</label>
+        <input type="text" id="fname" name="subject" placeholder="Enter Subject.." required>
+        <label for="message">Message :</label>
+        <textarea name="message" id="message" placeholder=" Enter Message.." required></textarea>
+        <div class="sub-res">
+            <input type="submit" class="confirm" id="submit" value="Submit">
+            <input type="reset" class="confirm" id="reset" value="Reset">
+        </div>
+    </form>
+
+    <h2 class="thanks">Thank you for Visiting my website</h2>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
